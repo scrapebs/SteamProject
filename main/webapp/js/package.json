@@ -1,0 +1,52 @@
+{
+  "name": "steam-user-inventory",
+  "version": "4.1.0",
+  "description": "Get the items in user steam inventory",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/steam-items/steam-user-inventory"
+  },
+  "author": {
+    "name": "Daniel Husar",
+    "email": "dano.husar@gmail.com",
+    "url": "github.com/danielhusar"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "fixture": "node fixture.js",
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "steam",
+    "user",
+    "inventory"
+  ],
+  "dependencies": {
+    "got": "^4.2.0"
+  },
+  "devDependencies": {
+    "lodash": "^3.10.1",
+    "mocha": "^2.2.5",
+    "proxyquire": "^1.7.3",
+    "xo": "^0.9.0"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "mocha"
+    ]
+  },
+  "readme": "# steam-user-inventory [![Build Status](https://travis-ci.org/steam-items/steam-user-inventory.svg?branch=master)](https://travis-ci.org/steam-items/steam-user-inventory)\n\n> Get the items in user steam inventory.\n\n\n## Install\n\n```\n$ npm install --save steam-user-inventory\n```\n\n\n## Usage\n\n```js\nvar steamUserInventory = require('steam-user-inventory');\nsteamUserInventory('awtt').then(data => {\n\t// console.log(data);\n});\n```\n\n\n## API\n\n### steamUserInventory(user, game)\nReturn: `Promise that resolve to array of objects`\n\n```\n[\n\t{\n\t\tid\n\t\tname\n\t\tappid\n\t\tclassid\n\t\tinstanceid\n\t\ttradable\n\t\tmarketable\n\t\tmarketTradableRestriction\n\t\tlink\n\t\timage\n\t\tcategory\n\t\ttype\n\t\texterior\n\t\tquality\n\t},\n\t...\n]\n```\n\n#### user\n\nType: `String`\n\nSteam username or profile ID.\n\n#### game\n\nType: `String`\n\nDefault `730/2/` (csgo)\n\nSteam game id.\n\n## License\n\nMIT © [Daniel Husar](https://github.com/danielhusar)\n",
+  "readmeFilename": "readme.md",
+  "bugs": {
+    "url": "https://github.com/steam-items/steam-user-inventory/issues"
+  },
+  "_id": "steam-user-inventory@4.1.0",
+  "_from": "steam-user-inventory@"
+}

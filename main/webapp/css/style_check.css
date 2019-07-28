@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+div label input {
+   margin-right:100px;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+label {
+    display: block; /* Блочный элемент */
+    position: relative; /* Относительное позиционирование */
+    font-weight: bold;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 4px;
+    height: 19px;
+    width : 140px;
+    background: #0b0f14 linear-gradient(#0b0f14, #1d252e 75%);
+    font-size: 13px;
+    color:#cccfcf;
+   vertical-align: 10px;
+}
+
+input[type="checkbox"] + span {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: #0b0f14 linear-gradient(#0b0f14, #1d252e 75%);/* Фоновый рисунок */
+    cursor: pointer; /* Курсор в виде руки */
+    text-align:center;
+    vertical-align: 10px;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + span {
+    background: #556c04 linear-gradient(#a4d007, #556c04 75%);
+}
+
+input[type="checkbox"]:hover + span {
+    background: #7b9c06 linear-gradient(#c6f711 10%, #7b9c06);
+}
+
+label.choose {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -9999;
+}
+
+#ck-button {
+    font-weight: bold;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 3px;
+    height: 17px;
+    width : 140px;
+    background: #0b0f14 linear-gradient(#0b0f14, #1d252e 75%);
+    font-size: 13px;
+    color:#cccfcf;
+    overflow:auto;
+    float:left;
+    border-radius: 4px 4px 4px 4px;
+}
+
+#ck-button label {
+    float:left;
+    width:140px;
+}
+
+#ck-button label span {
+    text-align:center;
+    display:block;
+    border-radius:2px;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-1000px;
+}
+
+input.choose[type="checkbox"]
+{
+    position: absolute;
+    left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: -9999;
+}
+
+#ck-button input:hover + span {
+    background: #cccfcf linear-gradient(#33ff33, #00ff00 75%);
+}
+
+#ck-button input:checked + span {
+   background: #cccfcf linear-gradient(#33ff33, #007700 75%);
+   color:#fff;
+}
+
+#ck-button input:checked:hover + span {
+    background: #cccfcf linear-gradient(#33ff33, #00ff00 75%);       
+    color:#fff;
+}
+
+button.simple {
+    color: #ffd;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 7px;
+    height: 37px;
+    border: 1px solid #2E8B57;
+    background: #3CB372 linear-gradient(#1d242d, #1d252e 75%);
+    transition: 0.3s;
+}
+
+button.simple:hover {
+    background: #43CD80 linear-gradient(#323f4f, #1d252e 75%);
+}
+button.simple:active {
+    background: #43CD80 linear-gradient(#323f4f 10%, #1d252e);
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 5px);
+}

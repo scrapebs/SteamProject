@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+input.green[type="submit"] {
+    font-weight: bold;
+    color: #ffd;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 4px;
+    height: 37px;
+    border: 1px solid #556c04;
+    background: #556c04 linear-gradient(#a4d007, #556c04 75%);
+    transition: 0.3s;
+}
+
+input.green[type="submit"]:hover {
+    background: #7b9c06 linear-gradient(#c6f711, #7b9c06 75%);
+}
+
+input.green[type="submit"]:active {
+    background: #7b9c06 linear-gradient(#c6f711 10%, #7b9c06);
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 5px);
+}
+
+button.green {
+    font-weight: bold;
+    color: #ffd;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 4px;
+    height: 37px;
+    border: 1px solid #556c04;
+    background: #556c04 linear-gradient(#a4d007, #7b9c06 75%);
+    transition: 0.3s;
+}
+
+button.green:hover {
+    background: #7b9c06 linear-gradient(#c6f711, #7b9c06 75%);
+}
+
+button.green:active {
+    background: #7b9c06 linear-gradient(#c6f711 10%, #7b9c06);
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 2px);
+}

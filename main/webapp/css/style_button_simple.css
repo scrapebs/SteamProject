@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+input.simple[type="submit"] {
+    color: #ffd;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 7px;
+    height: 37px;
+    border: 1px solid #cccfcf;
+    background: #cccfcf linear-gradient(#1d242d, #1d252e 75%);
+    transition: 0.3s;
+} 
+input.simple[type="submit"]:hover {
+    background: #cccfcf linear-gradient(#323f4f, #1d252e 75%);
+}
+input.simple[type="submit"]:active {
+    background: #cccfcf linear-gradient(#323f4f 10%, #1d252e);
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 5px);
+}
+
+button.simple {
+    color: #ffd;
+    text-shadow: 1px -1px 1px rgba(0,0,0,.7);
+    border-radius: 7px;
+    height: 37px;
+    border: 1px solid #cccfcf;
+    background: #cccfcf linear-gradient(#1d242d, #1d252e 75%);
+    transition: 0.3s;
+}
+
+button.simple:hover {
+    background: #cccfcf linear-gradient(#323f4f, #1d252e 75%);
+}
+
+button.simple:active {
+    background: #cccfcf linear-gradient(#323f4f 10%, #1d252e);
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 5px);
+}
